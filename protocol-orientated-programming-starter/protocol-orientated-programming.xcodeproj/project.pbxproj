@@ -12,6 +12,9 @@
 		8D36A755276C55090061E2DA /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36A754276C55090061E2DA /* UserViewController.swift */; };
 		8D36A75A276C550B0061E2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D36A759276C550B0061E2DA /* Assets.xcassets */; };
 		8D36A75D276C550B0061E2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D36A75B276C550B0061E2DA /* LaunchScreen.storyboard */; };
+		C1F2D68129916DF5004DD8B9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F2D68029916DF5004DD8B9 /* UserService.swift */; };
+		C1F2D68329916E2B004DD8B9 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F2D68229916E2B004DD8B9 /* UserResponse.swift */; };
+		C1F2D68529916E72004DD8B9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F2D68429916E72004DD8B9 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		8D36A759276C550B0061E2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D36A75C276C550B0061E2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D36A75E276C550B0061E2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1F2D68029916DF5004DD8B9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		C1F2D68229916E2B004DD8B9 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		C1F2D68429916E72004DD8B9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		8D36A74F276C55090061E2DA /* protocol-orientated-programming */ = {
 			isa = PBXGroup;
 			children = (
-				8D36A750276C55090061E2DA /* AppDelegate.swift */,
-				8D36A752276C55090061E2DA /* SceneDelegate.swift */,
-				8D36A754276C55090061E2DA /* UserViewController.swift */,
+				C1F2D68629916F14004DD8B9 /* App */,
+				C1F2D67C29916D95004DD8B9 /* Model */,
+				C1F2D67F29916DC0004DD8B9 /* Service */,
+				C1F2D67E29916DB5004DD8B9 /* ViewModel */,
+				C1F2D67D29916DA4004DD8B9 /* Controller */,
 				8D36A759276C550B0061E2DA /* Assets.xcassets */,
 				8D36A75B276C550B0061E2DA /* LaunchScreen.storyboard */,
 				8D36A75E276C550B0061E2DA /* Info.plist */,
 			);
 			path = "protocol-orientated-programming";
+			sourceTree = "<group>";
+		};
+		C1F2D67C29916D95004DD8B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1F2D68229916E2B004DD8B9 /* UserResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1F2D67D29916DA4004DD8B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D36A754276C55090061E2DA /* UserViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1F2D67E29916DB5004DD8B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1F2D68429916E72004DD8B9 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1F2D67F29916DC0004DD8B9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C1F2D68029916DF5004DD8B9 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C1F2D68629916F14004DD8B9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8D36A750276C55090061E2DA /* AppDelegate.swift */,
+				8D36A752276C55090061E2DA /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F2D68329916E2B004DD8B9 /* UserResponse.swift in Sources */,
+				C1F2D68529916E72004DD8B9 /* UserViewModel.swift in Sources */,
+				C1F2D68129916DF5004DD8B9 /* UserService.swift in Sources */,
 				8D36A755276C55090061E2DA /* UserViewController.swift in Sources */,
 				8D36A751276C55090061E2DA /* AppDelegate.swift in Sources */,
 				8D36A753276C55090061E2DA /* SceneDelegate.swift in Sources */,
